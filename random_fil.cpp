@@ -41,6 +41,6 @@ void randomfill(uint64_t *out, size_t n, uint64_t x, uint64_t a, uint64_t c) {
 
 	for(size_t i = alignedSize; i < n; ++i) {
 		x = x * a + c;
-		*out++ = x;
+		out[i] = x;
 	}
 }
